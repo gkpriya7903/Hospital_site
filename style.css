@@ -1,0 +1,351 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+/* Body Background with Fixed Image */
+body {
+    background-image: url('https://t3.ftcdn.net/jpg/08/78/37/14/360_F_878371475_wdGVuAwwG7pjOFmOURDaEB7Q2wXKB2IM.jpg'); /* Replace with your image path */
+    background-position: center center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background from repeating */
+    background-size: cover; /* Ensure the image covers the entire screen */
+    background-attachment: fixed; /* Make the background stay fixed when scrolling */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    margin: 0;
+}
+
+
+header {
+    background-color: #004b87;
+    padding: 20px;
+    color: white;
+}
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f7a200;
+    transition: color 0.3s ease;
+}
+
+
+/* Hero Section */
+.hero {
+    background: url('https://via.placeholder.com/1600x600') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #004b87;
+}
+.hero-content h1 {
+    font-size: 60px;
+    margin-bottom: 20px;
+    color: #004b87;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #004b87;
+}
+
+.cta-btn {
+    background-color: #f7a200;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.cta-btn:hover {
+    background-color: #004b87;
+    transition: background-color 0.3s ease;
+}
+
+/* Services Section */
+.services {
+    padding: 30px 10px;
+    text-align: center;
+    background-color:transparent;
+}
+
+.services h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.service-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-card {
+    background-color:white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 30%;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.service-card h3 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.service-card p {
+    font-size: 16px;
+}
+
+/* Footer */
+footer {
+    background-color: #004b87;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .service-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        width: 80%;
+    }
+
+    .hero-content h2 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .cta-btn {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .nav-links {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+}
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    background-color: #004b87;
+    padding: 20px;
+    color: white;
+}
+.about{
+    color: white;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.nav-links a:hover {
+    color: #f7a200;
+    transition: color 0.3s ease;
+}
+
+/* Appointment Form Styles */
+.appointment-section {
+    background-color:transparent;
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.appointment-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    opacity:0.7;
+}
+
+.appointment-container h2 {
+    font-size: 32px;
+    color: #004b87;
+    margin-bottom: 20px;
+}
+
+.appointment-container p {
+    font-size: 18px;
+    color: #004b87;
+    margin-bottom: 30px;
+}
+
+/* Form Styles */
+.appointment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    font-size: 16px;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    margin-top: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}
+
+input[type="date"],
+input[type="time"] {
+    padding-left: 10px;
+}
+
+/* Focus Effect */
+input:focus,
+select:focus {
+    border-color: #004b87;
+    outline: none;
+}
+
+button.cta-btn {
+    background-color: #f7a200;
+    color: white;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+button.cta-btn:hover {
+    background-color: #004b87;
+    transition: background-color 0.3s ease;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #004b87;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    font-size: 16px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .appointment-container {
+        padding: 20px;
+    }
+    
+    .appointment-container h2 {
+        font-size: 28px;
+    }
+
+    .appointment-container p {
+        font-size: 16px;
+    }
+    
+    .appointment-form {
+        padding: 10px;
+    }
+}
